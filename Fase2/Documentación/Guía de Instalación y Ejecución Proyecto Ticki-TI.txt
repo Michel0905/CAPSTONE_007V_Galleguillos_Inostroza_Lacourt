@@ -1,0 +1,80 @@
+Guía de Instalación y Ejecución: Proyecto "Ticki-TI"
+
+================================================
+REQUISITOS PREVIOS
+================================================
+
+1. Tener Python instalado en el equipo.
+   - Durante la instalación es fundamental marcar la casilla "Add Python to PATH".
+
+2. Un editor de código (recomendado: Visual Studio Code o el de su preferencia).
+
+================================================
+PASO 1: PREPARACIÓN DE LOS ARCHIVOS
+================================================
+
+1. Descomprimir el archivo Ticki-TI.rar en la ubicación deseada.
+2. Abrir la carpeta descomprimida en Visual Studio Code.
+3. Para asegurar una ejecución limpia y desde cero, eliminar los siguientes archivos y carpetas si están presentes en la raíz del proyecto:
+   - Carpeta __pycache__
+   - Carpeta uploads
+   - Carpeta venv
+   - Archivo tickiti.db
+
+================================================
+PASO 2: CONFIGURACIÓN DEL ENTORNO VIRTUAL
+================================================
+
+Abrir una nueva terminal dentro de VS Code (asegurarse de que sea PowerShell) y ejecutar los siguientes comandos uno por uno:
+
+1. Crear el entorno virtual:
+   python -m venv venv
+
+2. Dar permisos de ejecución de scripts en PowerShell (necesario para activar el entorno):
+   Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+3. Activar el entorno virtual:
+   .\venv\Scripts\activate
+
+   (Sabrá que se activó correctamente si aparece (venv) al inicio de la línea en la terminal).
+
+================================================
+PASO 3: INSTALACIÓN DE DEPENDENCIAS E INICIALIZACIÓN
+================================================
+
+Con el entorno virtual activado, ejecutar lo siguiente:
+
+1. Instalar las librerías necesarias para el proyecto:
+   pip install -r requirements.txt
+
+2. Ejecutar el script para inicializar la base de datos y crear los usuarios:
+   python crear_usuarios.py
+
+================================================
+PASO 4: EJECUTAR LA APLICACIÓN
+================================================
+
+Para levantar el sistema, ejecutar:
+
+streamlit run app.py
+
+(Esto abrirá automáticamente la aplicación en el navegador web predeterminado).
+
+================================================
+DATOS PARA EL LOGIN
+================================================
+
+correo: c.mendoza@ticki-nmx.cl
+password: pass1234
+
+================================================
+IMPORTANTE (AL REABRIR LA APLICACIÓN)
+================================================
+
+Si ya tiene el proyecto instalado y cierra el editor de código, antes de volver a ejecutar la aplicación debe activar nuevamente el entorno virtual:
+
+.\venv\Scripts\activate
+
+Luego ejecutar:
+
+streamlit run app.py

@@ -1,0 +1,89 @@
+/* Fondo principal en blanco */
+.stApp {
+    background-color: white !important;
+}
+
+/* Barra superior en blanco */
+[data-testid="stHeader"] {
+    background-color: white !important;
+}
+
+/* Cambiar el color de las letras "Deploy" y los 3 puntos */
+[data-testid="stHeader"] * {
+    color: #333333 !important;
+}
+
+/* Fondo de la barra lateral*/
+[data-testid="stSidebar"] {
+    background-color: white !important;
+}
+
+/* Letras del título principal y del título de la barra lateral */
+h1, [data-testid="stSidebar"] h2 {
+    color: #0e73b5 !important;
+}
+
+/* Letras de los subtítulos */
+h3, h4 {
+    color: #2997ab !important;
+}
+
+/* Todas las etiquetas de los campos (títulos de inputs) en negro */
+label p {
+    color: black !important;
+}
+
+/* Texto de las opciones del botón circular (Texto manual / Subir imagen) en negro */
+div[role="radiogroup"] * {
+    color: black !important;
+}
+
+/* Fondos oscuros y letras blancas para TODOS los inputs */
+.stTextInput input,
+.stTextArea textarea,
+.stSelectbox div[data-baseweb="select"] > div {
+    background-color: #20484f !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Forzar que el texto que el usuario escribe dentro del textarea sea blanco */
+.stTextArea textarea {
+    -webkit-text-fill-color: white !important;
+}
+
+/* Textos de resultados y texto general de la barra lateral en negro */
+.stMarkdown p, .stMarkdown span {
+    color: black !important;
+}
+
+/* Diseño del botón Iniciar Sesión / Procesar / Descargar */
+.stButton > button, .stDownloadButton > button {
+    background-color: #2997ab !important;
+    color: white !important;
+    font-weight: bold !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+/* Color de los botones al pasar el mouse por encima */
+.stButton > button:hover, .stDownloadButton > button:hover {
+    background-color: #0e73b5 !important;
+    color: white !important;
+}
+
+/*  Texto y fondo de las alertas */
+.stAlert p {
+    color: black !important;
+}
+
+/* color del botón de colapso de la barra lateral */
+[data-testid="stSidebarCollapseButton"] svg {
+    color: black !important;
+}
+
+[data-testid="stSidebarCollapseButton"] {
+    background-color: white !important;
+    border-radius: 50% !important;
+}

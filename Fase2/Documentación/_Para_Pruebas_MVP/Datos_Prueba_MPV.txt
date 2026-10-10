@@ -1,0 +1,24 @@
+TICKET DE PRUEBA ESCRITO
+=============================================================================
+Solicitud de revisión – Alta utilización de memoria en nodo CMPC
+
+Estimados,
+Se reporta alerta recurrente de High memory utilization (>90% for 5m) en el nodo CMPC ZS + Biter.
+Al ingresar al equipo se observa uso elevado de RAM (aprox. 13 GiB de 15 GiB) y no se puede liberar caché por falta de privilegios de administrador.
+Favor revisar y gestionar la liberación de memoria o el ajuste correspondiente.
+Quedo atento.
+Saludos.
+
+Resultado esperados:
+- Área:  
+- Prioridad: 
+
+=============================================================================
+TICKET DE PRUEBA VISUAL
+=============================================================================
+Suspensión de escalamiento
+
+Resultado esperados:
+- Área: Post Venta 
+- Prioridad: Alta
+=============================================================================
